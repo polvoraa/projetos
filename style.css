@@ -1,0 +1,245 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #1d1a23;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color:#fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:#874aff;
+}
+
+button:hover,form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ffffff36;
+    transform: scale(1.1);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 10px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #adadad;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO PORTIFOLIO */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #100e13;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 69px;
+}
+
+.img-port1{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port1:hover{
+    background-position: 100% 100%;
+    transform: scale(1.1);
+
+}
+
+/* ESTILO CENAS */
+section.cenas{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #100e13;
+}
+
+section.cenas .flex{
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-port2{
+    margin:40px;
+    width: 818px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+/* ESTILO CENAS 1 */
+section.cenas1{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #100e13;
+}
+
+section.cenas1 .flex{
+    align-items: center;
+}
+
+.img-port2:hover{
+    background-position: 100% 100%;
+    transform: scale(1.1);
+}
+
+
+/* PORTIFOLIO 2 */
+
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000096;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    section .topo-do-site{
+        padding: 20px 10%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+        margin: 40px;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        margin: 40px 40px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 90%;
+        margin-left: 20px;
+    }
+/* ESPECIALIDADES */
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PORTIFOLIO */
+    section.portifolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex{
+        gap: 60px;
+    }
+}
+
+
